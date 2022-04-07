@@ -1,0 +1,543 @@
+/* Start My Frame work */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: tahoma;
+    outline: none
+}
+
+a {
+    color: var(--color2)
+}
+
+img {
+    cursor: pointer
+}
+
+.flex-div {
+    display: flex;
+    align-items: center
+}
+
+.clear {
+    clear: both
+}
+
+:root {
+    --color2: #5a5a5a;
+    --transition: .4s
+}
+
+.start {
+    color: red;
+    animation: move .8s ease-in-out infinite
+}
+
+i {
+    color: #5a5a5ab0;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: var(--transition)
+}
+
+.container {
+    background-color: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.lg-container {
+    padding-left: 7%
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+/* End My Frame work */
+
+/* Start Header */
+
+header nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 20
+}
+
+header nav .nav-left i {
+    width: 22px;
+    margin-right: 25px
+}
+
+header nav .nav-left img:last-of-type {
+    width: 130px;
+
+}
+
+header nav .nav-middle .search-box {
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px
+}
+
+header nav .nav-middle .search-box input {
+    width: 400px;
+    border: 0;
+    background: transparent
+}
+
+header nav .nav-middle .search-box img {
+    width: 15px
+}
+
+header nav .nav-middle img {
+    width: 16px
+}
+
+header nav .nav-right img,
+header nav .nav-right i {
+    width: 25px;
+    margin-right: 25px
+}
+
+header nav .nav-right img:last-of-type {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0
+}
+
+/* End My Header */
+
+/* Strat The Sidebar */
+.sidebar {
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+
+.sidebar .shorcut-links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap
+}
+
+.sidebar .shorcut-links a:first-of-type {
+    color: #ed3833
+}
+
+.sidebar .shorcut-links a img,
+.sidebar .shorcut-links a i {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.sidebar .shorcut-links hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    width: 85%
+}
+
+.sidebar .subcribe-list h3 {
+    font-size: 13px;
+    margin: 20px 0;
+    color: var(--color2)
+}
+
+.sidebar .subcribe-list a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap
+}
+
+.sidebar .subcribe-list a img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px
+}
+
+
+.small {
+    width: 5%;
+
+
+}
+
+.small a p {
+    display: none
+}
+
+.small h3 {
+    display: none
+}
+
+.small a p hr {
+    width: 50%;
+    margin-bottom: 25px
+}
+
+/* End The Sidebar */
+
+/* Start Main */
+
+
+.banner {
+    width: 100%
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 10px
+}
+
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    margin-top: 15px
+}
+
+.list-container .video-list > a img {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.list-container .video-list .flex-div {
+    align-items: flex-start;
+    margin-top: 7px
+}
+
+.list-container .video-list .flex-div img {
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%
+}
+
+.list-container .video-list .flex-div .vid-info {
+    color: var(--color2);
+    font-size: 13px
+}
+
+.list-container .video-list .flex-div .vid-info a {
+    color: black;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px
+}
+
+@media (max-width:991px) {
+    #menu {
+        display: none
+    }
+
+    .sidebar {
+        display: none
+    }
+
+    .container,
+    .lgcontainer {
+        padding-left: 5%;
+        padding-right: 5%
+    }
+
+    nav .nav-left > img:last-of-type {
+        width: 90px
+    }
+
+    nav .nav-right img {
+        display: none
+    }
+
+    nav .nav-right img:last-of-type {
+        width: 30px;
+        display: block
+    }
+
+    nav .nav-middle .search-box form input {
+        width: 100px
+    }
+
+    nav .nav-middle > img {
+        display: none
+    }
+}
+
+/* End Main */
+
+
+/*---------------------- play video page --------------------- */
+
+.play-container {
+    padding-left: 2%
+}
+
+.play-container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.play-container .row .play-vid {
+    flex-basis: 69%
+}
+
+.play-container .row .play-vid > h3 {
+    font-weight: 600;
+    font-size: 22px
+}
+
+.play-container .row .play-vid video {
+    width: 100%;
+}
+
+.play-container .row .play-vid .tags a {
+    color: #000;
+    font-size: 13px
+}
+
+.play-container .row .play-vid .play-vid-info {
+
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--color2);
+
+}
+
+
+
+.play-container .row .play-vid .play-vid-info div {
+    float: right
+}
+
+.play-container .row .play-vid .play-vid-info p {
+    float: left
+}
+
+.play-container .row .play-vid .play-vid-info a {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px
+}
+
+.play-container .row .play-vid .play-vid-info div a i {
+    width: 20px;
+    margin-right: 8px;
+
+}
+
+
+.play-container .row .play-vid hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px
+}
+
+.play-container .row .play-vid .plub {
+    display: flex;
+    align-items: center;
+
+}
+
+.play-container .row .play-vid .plub img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.play-container .row .play-vid .plub div {
+    flex: 1;
+    line-height: 18px
+}
+
+.play-container .row .play-vid .plub div p {
+    color: #000;
+    font-weight: 600;
+    font-size: 18px
+}
+
+.play-container .row .play-vid .plub div span {
+    font-size: 13px;
+    color: var(--color2)
+}
+
+.play-container .row .play-vid .plub button {
+    background-color: red;
+    padding: 8px 30px;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.play-container .row .play-vid .vid-discription {
+    padding-left: 55px;
+    margin: 15px 0
+}
+
+.play-container .row .play-vid .vid-discription p {
+    color: var(--color2);
+    margin-bottom: 5px;
+    font-size: 13px
+}
+
+.play-container .row .play-vid .vid-discription h4 {
+    font-size: 14px;
+    color: var(--color2);
+
+}
+
+.play-container .row .play-vid .vid-discription .add-comment {
+    display: flex;
+    align-items: center;
+    margin-top: 10px
+}
+
+.play-container .row .play-vid .vid-discription .add-comment img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.play-container .row .play-vid .vid-discription .add-comment input {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-top: 10px;
+    background: transparent
+}
+
+.play-container .row .play-vid .vid-discription .old-comments {
+    display: flex;
+    align-items: center;
+    margin: 10px 0
+}
+
+.play-container .row .play-vid .vid-discription .old-comments img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.play-container .row .play-vid .vid-discription .old-comments div h3 {
+    font-size: 13px;
+    margin-bottom: 2px
+}
+
+.play-container .row .play-vid .vid-discription .old-comments div h3 span {
+    font-size: 10px;
+    color: var(--color2);
+    font-weight: 500;
+    margin-left: 2px
+}
+
+.play-container .row .play-vid .vid-discription .old-comments .comment-action {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 13px
+}
+
+.play-container .row .play-vid .vid-discription .old-comments .comment-action img {
+    border-radius: 0;
+    width: 20px;
+    margin-right: 5px
+}
+
+.play-container .row .play-vid .vid-discription .old-comments .comment-action span {
+    margin-right: 20px;
+    color: var(--color2)
+}
+
+.play-container .row .play-vid .vid-discription .old-comments .comment-action a {
+    color: #00f
+}
+
+.play-container .row .right-sidebar {
+
+    flex-basis: 30%
+}
+
+.play-container .row .right-sidebar .side-vid-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    transition-duration: .5s;
+
+
+}
+
+.play-container .row .right-sidebar .side-vid-list:hover {
+    background-color: #fff
+}
+
+.play-container .row .right-sidebar .side-vid-list img {
+    width: 100%
+}
+
+.play-container .row .right-sidebar .side-vid-list > a:first-of-type {
+    flex-basis: 49%
+}
+
+.play-container .row .right-sidebar .side-vid-list .vid-info {
+    flex-basis: 49%
+}
+
+@media(max-width:991px) {
+    .play-container .row .play-vid {
+        flex-basis: 100%
+    }
+
+    .play-container .row .right-sidebar {
+        flex-basis: 100%
+    }
+
+    .play-container {
+        padding-left: 5%
+    }
+
+    .play-container .row .play-vid .vid-discription {
+        padding-left: 0
+    }
+
+    .play-container .row .play-vid .play-vid-info p {
+        width: 100%
+    }
+
+    .play-container .row .play-vid .play-vid-info div {
+        float: none;
+        display: inline-block;
+        margin-left: -14px;
+        margin-top: 15px
+    }
+}
