@@ -271,6 +271,11 @@ header nav .nav-right img:last-of-type {
     font-size: 13px
 }
 
+.list-container .video-list .flex-div .vid-info > p:last-of-type{
+    
+    text-transform: lowercase
+}
+
 .list-container .video-list .flex-div .vid-info a {
     color: black;
     font-weight: 600;
